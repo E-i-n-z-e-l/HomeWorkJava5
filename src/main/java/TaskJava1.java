@@ -11,14 +11,14 @@ import java.util.Scanner;
 public class TaskJava1 {
     public static void main(String[] args) {
 
-        HashMap<String, List<String>> telephoneDirectory = new HashMap<>();
-        List<String> telephoneNumber = new ArrayList<>();
+        HashMap<String, List<String>> telephoneDirectory = new HashMap<>(); // Создаем HashMap;
+        List<String> telephoneNumber = new ArrayList<>(); // Создаем список ппямо в HashMap;
         telephoneNumber.add("123");
         telephoneNumber.add("456");
         telephoneNumber.add("789");
-        telephoneDirectory.put("Иванов", telephoneNumber);
+        telephoneDirectory.put("Иванов", telephoneNumber); // метод put() позволяет добавить в HashMap ключ и значение(-я)
 
-        for (String key : telephoneDirectory.keySet()) {
+        for (String key : telephoneDirectory.keySet()) {      // Проходимся по ключам с помощью keySet();
             telephoneNumber = telephoneDirectory.get(key);
             System.out.println("Фамилия: " + key);
             System.out.println("Телефонные номера: " + telephoneNumber);
