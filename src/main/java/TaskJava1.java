@@ -12,7 +12,7 @@ public class TaskJava1 {
     public static void main(String[] args) {
 
         HashMap<String, List<String>> telephoneDirectory = new HashMap<>(); // Создаем HashMap;
-        List<String> telephoneNumber = new ArrayList<>(); // Создаем список ппямо в HashMap;
+        List<String> telephoneNumber = new ArrayList<>(); // Создаем список прямо в HashMap;
         telephoneNumber.add("123");
         telephoneNumber.add("456");
         telephoneNumber.add("789");
